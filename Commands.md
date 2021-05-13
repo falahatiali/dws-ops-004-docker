@@ -34,18 +34,6 @@ Answer:
 
 **__________________________**
 
-## **Question 2:**
- 1 - What ports it exposes?
-
-
-Answer:
-```
-1 - docker image inspect nginx:1.20.0 | jq .[0].Config.ExposedPorts
-```
-**Result:** {
-              "80/tcp": {}
-            }
-**__________________________**
 
 ## **Question 3:**
  1 - Save nginx:1.20.0 image with 'nginx.tar.gz' name and then load with this name : 'nginx:v1.20.0-test'
@@ -75,4 +63,13 @@ Answer:
 **Result:** 5
 
 
+**__________________________**
+
+## **Question 6:**
+ 1 - Remove dangling images
+
+Answer:
+```
+1 - docker image prune
+```
 
